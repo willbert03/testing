@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Base table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        }
+        #mobile-table {
+            display: none;
+        }
+        #desktop-table {
+            display: block;  
+        }
+        /* On smaller screens, rearrange the table */
+        @media only screen and (max-width: 600px) {
+            #mobile-table {
+                display: block
+            }
+            #desktop-table {
+                display:none
+            }
+        }
+    </style>
+</head>
+<body>
+    <table  id="desktop-table">
+        <thead>
+            <tr>
+                <th>Title1</th>
+                <th>Title2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Content1</td>
+                <td>Content4</td>
+            </tr>
+            <tr>
+                <td>Content2</td>
+                <td>Content5</td>
+            </tr>
+            <tr>
+                <td>Content3</td>
+                <td>Content6</td>
+            </tr>
+        </tbody>
+    </table>
+    <table id="mobile-table">
+        <tbody>
+            <tr>
+                <td><strong>Title1</strong></td>
+            </tr>
+            <tr>
+                <td>Content1</td>
+            </tr>
+            <tr>
+                <td>Content2</td>
+            </tr>
+            <tr>
+                <td>Content3</td>
+            </tr>
+            <tr>
+                <td><strong>Title2</strong></td>
+            </tr>
+            <tr>
+                <td>Content4</td>
+            </tr>
+            <tr>
+                <td>Content5</td>
+            </tr>
+            <tr>
+                <td>Content6</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
