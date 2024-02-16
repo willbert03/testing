@@ -14,26 +14,25 @@
             padding: 8px;
             text-align: left;
         }
-        }
-        #mobile-table {
+        #mtable {
             display: none;
         }
-        #desktop-table {
+        #dtable {
             display: block;  
         }
         /* swap tables to display*/
         @media only screen and (max-width: 600px) {
             #mobile-table {
-                display: block
+                display: block;
             }
             #desktop-table {
-                display:none
+                display:none;
             }
         }
     </style>
 </head>
 <body>
-    <table  id="desktop-table">
+    <table  id="dtable">
         <thead>
             <tr>
                 <th><strong>Title1</strong></th>
@@ -55,7 +54,7 @@
             </tr>
         </tbody>
     </table>
-    <table id="mobile-table">
+    <table id="mtable">
         <tbody>
             <tr>
                 <td><strong>Title1</strong></td>
